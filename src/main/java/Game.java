@@ -181,7 +181,7 @@ public class Game {
     }
 
 
-    private boolean poziomCheckWin(char sign){
+    public boolean poziomCheckWin(char sign){
         int check = 0;
         for(int i = 0; i < 3; i++){
             for (int y = 0; y < 3; y++){
@@ -197,7 +197,7 @@ public class Game {
         }
         return false;
     }
-    private boolean pionCheckWin(char sign){
+    public boolean pionCheckWin(char sign){
         int check = 0;
         for(int i = 0; i < 3; i++){
             for (int y = 0; y < 3; y++){
@@ -214,7 +214,7 @@ public class Game {
         return false;
     }
 
-    private boolean topDownCheckWin(char sign) {
+    public boolean topDownCheckWin(char sign) {
 
         for (int i = 0; i < 3; i++) {
             char znak = tab[i][i];
@@ -225,7 +225,7 @@ public class Game {
         return true;
     }
 
-    private boolean downTopCheckWin(char sign){
+    public boolean downTopCheckWin(char sign){
 
         int x = 2;
         int y = 0;

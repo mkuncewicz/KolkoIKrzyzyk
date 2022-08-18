@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CheckWinTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-18T02:25:46" hostname="DESKTOP-D6I026T" time="0.039">
+  <properties/>
+  <testcase name="topWinTest()" classname="CheckWinTest" time="0.029"/>
+  <testcase name="crossWinTest()" classname="CheckWinTest" time="0.001"/>
+  <testcase name="flatWinTest()" classname="CheckWinTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
