@@ -4,13 +4,9 @@ import java.util.Scanner;
 public class Game {
 
     private char[][] tab = new char[3][3];
-
-
     private int numberOfTurn = 0;
-
     Random random = new Random();
     Scanner scanner = new Scanner(System.in);
-
     public char[][] getTab() {
         return tab;
     }
@@ -79,7 +75,6 @@ public class Game {
     private void playVsPlayer(){
         while (true){
             showTab();
-
             turnUser('O');
             if(checkWin('O')){
                 showTab();
@@ -147,8 +142,6 @@ public class Game {
             System.out.println("Wybierz inne pole");
             turnUser(sign);
         }
-
-
     }
 
     private void turnComputer(char sign){
@@ -215,7 +208,6 @@ public class Game {
     }
 
     public boolean topDownCheckWin(char sign) {
-
         for (int i = 0; i < 3; i++) {
             char znak = tab[i][i];
             if (znak != sign) {
@@ -226,7 +218,6 @@ public class Game {
     }
 
     public boolean downTopCheckWin(char sign){
-
         int x = 2;
         int y = 0;
         for (int i = 0; i <= 2; i++){
@@ -239,6 +230,5 @@ public class Game {
         }
             return true;
     }
-
     }
 
